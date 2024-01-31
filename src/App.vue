@@ -1,30 +1,74 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="menu">
+    <div>
+      <img src="./assets/img/dc-logo.png" />
+    </div>
+    <div>
+      <ul class="menu-list">
+        <li>
+          <a href="#">CHARACTERS</a>
+        </li>
+        <li>
+          <a href="#">COMICS</a>
+        </li>
+        <li>
+          <a href="#">MOVIES</a>
+        </li>
+        <li>
+          <a href="#">TV</a>
+        </li>
+        <li>
+          <a href="#">GAMES</a>
+        </li>
+        <li>
+          <a href="#">COLLECTIBLES</a>
+        </li>
+        <li>
+          <a href="#">VIDEOS</a>
+        </li>
+        <li>
+          <a href="#">FANS</a>
+        </li>
+        <li>
+          <a href="#">NEWS</a>
+        </li>
+        <li>
+          <a href="#">SHOP</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script></script>
+
+<style>
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.menu-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+.menu-list a:hover {
+  color: blue; /* Change color on hover */
 }
 </style>
