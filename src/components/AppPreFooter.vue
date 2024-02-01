@@ -92,7 +92,7 @@ export default {
   name: "AppPreFooter",
 };
 </script>
-<style>
+<style scoped>
 .container {
   display: flex;
   align-items: left;

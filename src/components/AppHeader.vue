@@ -46,7 +46,7 @@ export default {
   name: "AppHeader",
 };
 </script>
-<style>
+<style scoped>
 .logo {
   width: 80px;
 }
