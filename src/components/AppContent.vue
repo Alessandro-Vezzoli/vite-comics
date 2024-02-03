@@ -1,18 +1,20 @@
 <template>
   <div class="back-black">
     <div class="main">
+      <h1 class="text">PRODOTTI</h1>
+
       <div class="container">
-        <div class="container text-center pb-5">
-          <h1 class="text">PRODOTTI</h1>
+        <div class="container text-center">
           <div class="row">
-            <div v-for="item in products" :key="item.id" class="col-md-4 p-3">
-              <ProductCard
-                :src="item.thumb"
-                :titolo="item.series"
-                :tipo="item.type"
-                :prezzo="item.price"
-              ></ProductCard>
-            </div>
+            <ProductCard
+              v-for="item in products"
+              :key="item.id"
+              :src="item.thumb"
+              :titolo="item.series"
+              :tipo="item.type"
+              :prezzo="item.price"
+              class="col-md-4 mb-4"
+            ></ProductCard>
           </div>
         </div>
       </div>
@@ -122,7 +124,6 @@ export default {
 <style scoped>
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -130,8 +131,8 @@ export default {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .back-black {
@@ -142,5 +143,6 @@ export default {
 
 .text {
   color: white;
+  text-align: center;
 }
 </style>
